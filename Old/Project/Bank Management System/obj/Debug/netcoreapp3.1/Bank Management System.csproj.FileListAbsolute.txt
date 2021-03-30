@@ -1,0 +1,13 @@
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.exe
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.deps.json
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.runtimeconfig.json
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.runtimeconfig.dev.json
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.dll
+F:\Bank Management System\bin\Debug\netcoreapp3.1\Bank Management System.pdb
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.csprojAssemblyReference.cache
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.AssemblyInfoInputs.cache
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.AssemblyInfo.cs
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.csproj.CoreCompileInputs.cache
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.dll
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.pdb
+F:\Bank Management System\obj\Debug\netcoreapp3.1\Bank Management System.genruntimeconfig.cache

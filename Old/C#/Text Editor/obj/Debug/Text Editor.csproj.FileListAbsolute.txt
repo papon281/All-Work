@@ -1,0 +1,24 @@
+F:\Text Editor\bin\Debug\Text Editor.exe.config
+F:\Text Editor\bin\Debug\Text Editor.exe
+F:\Text Editor\bin\Debug\Text Editor.pdb
+F:\Text Editor\obj\Debug\Text Editor.csprojAssemblyReference.cache
+F:\Text Editor\obj\Debug\Text_Editor.Login.resources
+F:\Text Editor\obj\Debug\Text_Editor.Registration.resources
+F:\Text Editor\obj\Debug\Text_Editor.Texteditor.resources
+F:\Text Editor\obj\Debug\Text_Editor.Properties.Resources.resources
+F:\Text Editor\obj\Debug\Text Editor.csproj.GenerateResource.cache
+F:\Text Editor\obj\Debug\Text Editor.csproj.CoreCompileInputs.cache
+F:\Text Editor\obj\Debug\Text Editor.exe
+F:\Text Editor\obj\Debug\Text Editor.pdb
+F:\Work\C#\Text Editor\bin\Debug\Text Editor.exe.config
+F:\Work\C#\Text Editor\bin\Debug\Text Editor.exe
+F:\Work\C#\Text Editor\bin\Debug\Text Editor.pdb
+F:\Work\C#\Text Editor\obj\Debug\Text_Editor.Login.resources
+F:\Work\C#\Text Editor\obj\Debug\Text_Editor.Registration.resources
+F:\Work\C#\Text Editor\obj\Debug\Text_Editor.Texteditor.resources
+F:\Work\C#\Text Editor\obj\Debug\Text_Editor.Properties.Resources.resources
+F:\Work\C#\Text Editor\obj\Debug\Text Editor.csproj.GenerateResource.cache
+F:\Work\C#\Text Editor\obj\Debug\Text Editor.csproj.CoreCompileInputs.cache
+F:\Work\C#\Text Editor\obj\Debug\Text Editor.exe
+F:\Work\C#\Text Editor\obj\Debug\Text Editor.pdb
+F:\Work\C#\Text Editor\obj\Debug\Text Editor.csprojAssemblyReference.cache

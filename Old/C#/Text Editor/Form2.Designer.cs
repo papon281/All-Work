@@ -1,0 +1,41 @@
+﻿namespace Text_Editor
+{
+    partial class Registration
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Registration_Load);
+            this.ResumeLayout(false);
+        }
+        #endregion
+    }
+}
