@@ -1,3 +1,0 @@
-papon 123456
-niloy abcdef
-logna 345678
