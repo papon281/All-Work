@@ -1,0 +1,347 @@
+import java.util.*;
+import java.io.*;
+
+public class Suduku{
+
+	static int N = 9;
+
+	public static boolean isinRange (int[][] suduku) {
+
+		// Traverse suduku[][] array
+		for (int i = 0 ; i < N ; i++) {
+
+			for (int j = 0; j < N ; j++) {
+
+				// Check if Suduku[i][j] lies in the range
+				if(suduku[i][j] <= 0 || suduku[i][j] > 9) {
+
+					return false;
+
+				}
+
+			}
+
+		}
+
+		return true;
+
+	}
+
+	// Function to check if the solution of soduku puzzle is valid or invalid
+	public static boolean isValidSuduku (int[][] suduku) {
+
+		// Check if all elements of suduku[][] stores value in the range[1-9]
+		if (isinRange(suduku) == false) {
+
+			return false;
+
+		}
+
+		// Stores Unique value from 1-N
+		boolean[] valid = new boolean[N+1];
+
+		// Traverse each row of the given array
+		for (int i = 0 ; i < N ; i++) {
+
+			// Initializaes the valid[] array to false
+			Arrays.fill (valid , false);
+
+			// Traverse each column of currebt row
+			for (int j = 0 ; j < N ; j++) {
+
+				// Stores the value of suduku[i][j]
+				int z = suduku[i][j];
+
+				// Check if current row stores the duplicate value
+				if (valid[z]) {
+
+					return false;
+
+				}
+
+				valid[z]= true;
+
+			}
+
+		}
+
+		// Traverse each column of the given array
+		for (int i = 0 ; i < N ; i++) {
+
+			// Initilizes the valid[] array to false
+			Arrays.fill(valid , false);
+
+			// Traverse each row of the current column
+			for (int j = 0 ; j < N ; j++) {
+
+				// Stores the value of suduku[j][i]
+				int z = suduku[j][i];
+
+				// Check if current columns stores duplicate value
+				if (valid[z]){
+
+					return false;
+
+				}
+
+				valid[z]=true;
+
+			}
+
+		}
+
+		// Traverse each block of size 3*3 in suduku[][] array
+		for (int i = 0 ; i < N - 2 ; i = i + 3) {
+
+			//j stores first column of each 3*3 block
+			for (int j = 0 ; j < N - 2 ; j = j+3) {
+
+				// Initialize valid[] array to false
+				Arrays.fill(valid , false);
+
+				// Traverse current block
+				for (int k = 0 ; k < 3 ; k++) {
+
+					for (int l = 0 ; l < 3 ; l++) {
+
+						// Stores row number of current block
+						int x = i + k;
+
+						// Stores column number of current block
+						int y = j + l;
+
+						// Stores the value of suduku[x][y]
+						int z = suduku[x][y];
+
+						// Check if current block stores duplicate value
+						if(valid[z]) {
+
+							return false;
+
+						}
+
+						valid[z]=true;
+
+					}
+
+				}
+
+			}
+
+		}
+
+		// If all conditions satisfied
+		return true;
+
+	}
+
+	public static boolean solveSuduku (int[][] suduku , int row , int column) {
+
+		// If we reached the 8th row and 9th column, we are returning true 
+		if (row == N-1 && column == N) {
+
+			return true;
+
+		}
+
+		// Check if column value is 9, if then we move to next row and column start from 0
+		if (column == N) {
+
+			row++;
+
+			column=0;
+
+		}
+
+		/*Check if the current position of the suduku already contains
+			value>0, we iterate for next column*/
+		if (suduku[row][column] != 0) {
+
+			return solveSuduku (suduku , row , column+1);
+
+		}
+
+		for (int num = 1 ; num <= 9 ; num++) {
+
+			/*Check if it is safe to place the num(1-9) in the given
+				row,column else we move to next column*/
+			if (isSafe (suduku , row , column , num) ) {
+
+				/* Assigning the num in the current position(row,column)
+				   assuming our assigned num in the position nis correct*/
+				suduku[row][column]=num;
+
+				// Checking for next column
+				if (solveSuduku (suduku , row , column+1) ) {
+
+					return true;
+
+				}
+
+			}
+
+			/* Removing the assigned num, since our assumption was wrong
+				and we go for the next assumption with difference num value*/
+			suduku[row][col] = 0;
+
+		}
+
+		return false;
+
+	}
+
+	// Function for print the suduku
+	public static void printSuduku (int[][] suduku) {
+
+		for(int i = 0 ; i < n ; i++) {
+
+			for(int j = 0 ; j < N ; j++) {
+
+				System.out.print(suduku[i][j]+" ");
+
+			}
+
+			System.out.println();
+
+		}	
+
+	}
+
+	// Check whether it is valid for assigned the num in given row,column
+	public static boolean isSafe (int[][] suduku , int row , int column , int num) {
+
+		// If we find the same num in the similar row, return false
+		for (int i =0 ; i < N ; i++) {
+
+			if (suduku[row][i] == num) {
+
+				return false;
+
+			}
+
+		}
+
+		// If we find the same num in similar column,return false
+		for (int i = 0 ; i < N ; i++) {
+
+			if (suduku[x][column] == num) {
+
+				return false;
+
+			}
+
+		}
+
+		int startRow = row - row % 3;
+
+		int startColumn = column - column % 3;
+
+		// If we find the same num in the particular 3*3 matrix, return false
+		for (int i = 0 ; i < 3; i++) {
+
+			for (int j = 0 ; j < 3 ; j++) {
+
+				if (suduku[i+startRow][j+startColumn] == num) {
+
+					return false;
+
+				}
+
+			}
+
+		}
+
+		return true;
+
+	}
+
+	// Driver code
+	public static void main (String args[]) {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Select any number between 1-3.");
+
+		System.out.println("1. Check the suduku is valid or invalid.");
+
+		System.out.println("2. Solution of the Suduku Puzzle.");
+
+		System.out.println("3. Exit.");
+
+		int option = input.nextInt();
+
+		if(option == 1) {
+
+			System.out.println("Enter a suduku for check valid or invalid.");
+
+			int[][] suduku = new int[N][N];
+
+			for(int i = 0 ; i < N ;i++) {
+
+				for(int j = 0 ; j < N ;j++) {
+
+					suduku[i][j] = input.nextInt();
+
+				}
+
+			}
+
+			if (isValidSuduku (suduku)) {
+
+				System.out.println("The suduku you enter was valid.");
+
+			}
+
+			else {
+
+				System.out.println("The suduku you enter was invalid.");
+
+			}
+
+		}
+
+		else if(option == 2) {
+
+			System.out.println("Enter a suduku for solve.");
+
+			int[][] suduku = new int[N][N];
+
+			for(int i = 0 ; i < N ; i++) {
+
+				for(int j = 0 ; j < N ;j++) {
+
+					suduku[i][j] = input.nextInt();
+
+				}
+
+			}
+
+			if (solveSuduku(suduku , 0 , 0)) {
+
+				printSuduku (suduku);
+
+			}
+
+			else {
+
+				System.out.println("No solution exist."); 
+
+			}
+
+		}
+
+		else if(option == 3) {
+
+			System.exit(0);
+
+		}
+
+		else {
+
+			System.out.println("Please, enter number between 1-3.");
+
+		}
+
+	}
+
+}
