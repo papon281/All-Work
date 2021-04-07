@@ -1,0 +1,183 @@
+
+command: input
+enter the file name that has the graph: g1.txt
+
+command: number
+the graph has 7 vertices
+
+command: mention
+this graph has a cycle, is NOT connected and has as components
+
+command: connected
+the graph is NOT connected
+
+command: find
+the graph has at least one cycle
+
+command: list
+0 1 2 4 3 
+5 
+6 
+
+command: twin
+
+for twin graph 
+command: number
+the graph has 7 vertices
+
+for twin graph 
+command: connected
+the graph is NOT connected
+
+for twin graph 
+command: list
+0 1 2 4 3 
+5 
+6 
+
+for twin graph 
+command: mention
+exit the 'twin mode' with the first done
+
+for twin graph 
+command: done
+
+command: done
+
+command: input
+enter the file name that has the graph: g0.txt
+
+command: mention
+this graph is NOT connected, has at least one cycle, and 2 components
+
+command: connected
+the graph is NOT connected
+
+command: find
+the graph has at least one cycle
+
+command: list
+0 3 
+1 6 4 5 2 
+
+command: done
+
+command: input
+enter the file name that has the graph: g2.txt
+
+command: connected
+the graph is NOT connected
+
+command: find
+no cycles
+
+command: list
+0 1 
+2 
+3 4 
+
+command: done
+
+command: input
+enter the file name that has the graph: g5.txt
+
+command: number
+the graph has 9 vertices
+
+command: find
+the graph has at least one cycle
+
+command: connected
+the graph is NOT connected
+
+command: list
+0 
+1 2 4 5 3 
+6 8 7 
+
+command: twin
+
+for twin graph 
+command: number
+the graph has 9 vertices
+
+for twin graph 
+command: list
+0 
+1 2 4 5 3 
+6 8 7 
+
+for twin graph 
+command: done
+
+command: done
+
+command: input
+enter the file name that has the graph: g6.txt
+
+command: number
+the graph has 33 vertices
+
+command: mention
+g6.txt is a file of singletons and there are no edges
+
+command: connected
+the graph is NOT connected
+
+command: find
+no cycles
+
+command: list
+0 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12 
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 
+21 
+22 
+23 
+24 
+25 
+26 
+27 
+28 
+29 
+30 
+31 
+32 
+
+command: twin
+
+for twin graph 
+command: number
+the graph has 33 vertices
+
+for twin graph 
+command: connected
+the graph is NOT connected
+
+for twin graph 
+command: done
+
+command: done
+
+command: mention
+exit the program
+
+command: quit

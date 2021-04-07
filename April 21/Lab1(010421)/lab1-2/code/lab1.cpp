@@ -61,7 +61,7 @@ namespace TND004
         it1 = TND004::stable_partition(std::begin(V), std::begin(V) + mid, p);
         it2 = TND004::stable_partition(std::begin(V) + mid, std::end(V), p);
 
-        std::rotate(it1,begin(V)+ mid, it2);
+        std::rotate(it1, begin(V)+ mid, it2);
         for(it = begin(V); it != end(V); it++){
             std::cout << *it << " ";
         }
