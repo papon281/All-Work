@@ -26,7 +26,7 @@ Hash :: Hash(int _size)
 }
 
 // function to generate key
-void Hash :: getKey()
+void Hash :: getKey(double factor)
 {
     int cnt = 0,x = 0;
     //if x is less than 1000, then continue generate distinct keys
@@ -38,7 +38,7 @@ void Hash :: getKey()
         double loadFactor = (double)(distinct.size()) / (double) (tableSize);
 
         // If the load factor is > 0.50, rehashing is done
-        if(loadFactor > 0.5)
+        if(loadFactor > factor)
         {
             rehash();
         }

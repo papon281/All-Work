@@ -13,7 +13,7 @@ class Hash{
 
 public:
     Hash(int _size);
-    void getKey();
+    void getKey(double factor);
     int hash_fct(int k, int m);
     void linearInsert(int key);
     int linearSearch(int key);

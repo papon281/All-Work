@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1618296087 source:e:\work\april 21\set\lab2.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<cassert>
+	"set.h"
+
+1618296214 e:\work\april 21\set\set.h
+	<iostream>
+	<vector>
+
+1618317846 source:e:\work\april 21\set\set.cpp
+	"set.h"
+	"node.h"
+
+1618296125 e:\work\april 21\set\node.h
+	<cassert>
+	"set.h"
+
