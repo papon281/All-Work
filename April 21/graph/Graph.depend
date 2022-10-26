@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1617611087 source:e:\work\april 21\graph\commands.cpp
+	"Commands.h"
+	<sstream>
+	<map>
+	<iostream>
+	<string>
+	<fstream>
+
+1617611087 e:\work\april 21\graph\commands.h
+	<map>
+	<fstream>
+
+1617611086 source:e:\work\april 21\graph\dograph.cpp
+	<fstream>
+	<string>
+	<iostream>
+	"Commands.h"
+	"Graph.h"
+
+1617798322 e:\work\april 21\graph\graph.h
+	<iostream>
+
+1617799228 source:e:\work\april 21\graph\graph.cpp
+	<iostream>
+	<limits>
+	<ios>
+	"Graph.h"
+	<stdlib.h>
+	<queue>
+

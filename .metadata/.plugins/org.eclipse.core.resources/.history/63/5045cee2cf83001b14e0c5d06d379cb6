@@ -1,0 +1,73 @@
+import java.util.Scanner;
+import java.util.Vector;
+import java.io.*;
+
+
+public class SkeeBall {
+	
+	static final int MAX_PLAYS = 8;
+	Vector<Integer> plays = new Vector<Integer>();
+	Vector<Integer> score = new Vector<Integer>();
+	
+	public void SimulatePlay(int n) {
+		
+	}
+	
+	public void printf() {
+		
+	}
+	
+	
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		while(true) {
+			System.out.print("Enter the number of plays (1-8) ");
+			int n = in.nextInt();
+			switch(n) {
+				case 1:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 2:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 3:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 4:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 5:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 6:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 7:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				case 8:
+					SkeeBall skee = new SkeeBall();
+					skee.SimulatePlay(n);
+					skee.printf();
+					break;
+				default:
+					System.out.println("Invalid input. Please enter a number between 1 and 8.");
+					break;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+input
+g1.txt
+number
+mention
+this graph has a cycle, is NOT connected and has as components
+connected
+find
+list
+twin
+number
+connected
+list
+mention
+exit the 'twin mode' with the first done
+done
+done
+input
+g0.txt
+mention
+this graph is NOT connected, has at least one cycle, and 2 components
+connected
+find
+list
+done
+input
+g2.txt
+connected
+find
+list
+done
+input 
+g5.txt
+number
+find
+connected
+list
+twin
+number
+list
+done
+done
+input
+g6.txt
+number
+mention
+g6.txt is a file of singletons and there are no edges
+connected
+find
+list
+twin
+number
+connected
+done
+done
+mention
+exit the program
+quit 

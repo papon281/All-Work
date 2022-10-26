@@ -1,0 +1,82 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.io.*;
+public class MorseCodeConvert {
+	ArrayList<MorseCode> listCodes = new ArrayList<MorseCode>();
+	private String encode;
+	void initiaLize() {
+		listCodes.add(new MorseCode('A',".-"));
+		listCodes.add(new MorseCode('B',"-..."));
+		listCodes.add(new MorseCode('C',"-.-."));
+		listCodes.add(new MorseCode('D',"-.."));
+		listCodes.add(new MorseCode('E',"."));
+		listCodes.add(new MorseCode('F',"..-."));
+		listCodes.add(new MorseCode('G',"--."));
+		listCodes.add(new MorseCode('H',"...."));
+		listCodes.add(new MorseCode('I',"--"));
+		listCodes.add(new MorseCode('J',".---"));
+		listCodes.add(new MorseCode('K',"-.-"));
+		listCodes.add(new MorseCode('L',".-.."));
+		listCodes.add(new MorseCode('M',"--"));
+		listCodes.add(new MorseCode('N',"-."));
+		listCodes.add(new MorseCode('O',"---"));
+		listCodes.add(new MorseCode('P',".--."));
+		listCodes.add(new MorseCode('Q',"--.-"));
+		listCodes.add(new MorseCode('R',".-."));
+		listCodes.add(new MorseCode('S',"..."));
+		listCodes.add(new MorseCode('T',"-"));
+		listCodes.add(new MorseCode('U',"..-"));
+		listCodes.add(new MorseCode('V',"...-"));
+		listCodes.add(new MorseCode('W',"-..-"));
+		listCodes.add(new MorseCode('X',"-.--"));
+		listCodes.add(new MorseCode('Y',"-.--"));
+		listCodes.add(new MorseCode('Z',"..--"));
+		listCodes.add(new MorseCode('0',"-----"));
+		listCodes.add(new MorseCode('1',".----"));
+		listCodes.add(new MorseCode('2',"..---"));
+		listCodes.add(new MorseCode('3',"...--"));
+		listCodes.add(new MorseCode('4',"....-"));
+		listCodes.add(new MorseCode('5',"....."));
+		listCodes.add(new MorseCode('6',"-...."));
+		listCodes.add(new MorseCode('7',"--..."));
+		listCodes.add(new MorseCode('8',"---.."));
+		listCodes.add(new MorseCode('9',"----."));
+	}
+	
+	
+	private String getEncode(char c){
+		for(int i = 0; i < listCodes.size();i++) {
+			if(listCodes.get(i).getCharacter() == c) {
+				return listCodes.get(i).getEncoding();
+			}
+		}
+		return c + "";
+	}
+	
+	public MorseCodeConvert(String str) {
+		encodeString(str);
+	}
+	
+	void printEncodingList() {
+		System.out.println(encode);
+	}
+	
+	void encodeString(String str){
+		initiaLize();
+		encode ="";
+		str = str.toUpperCase();
+		for(int i =0;i<str.length();i++) {
+			encode += getEncode(str.charAt(i)) + i; 
+		}
+		printEncodingList();
+		
+	}
+	
+	MorseCode find(char ch) {
+		return null;
+	}
+	
+	void encodeFile(String filename) {
+		
+	}
+}

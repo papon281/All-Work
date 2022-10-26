@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1314894556 source:f:\work\march-21\polynomial\main.cpp
+	<iostream>
+
+1616139002 source:f:\work\march-21\polynomial\polymath.cpp
+	"Univariate.h"
+	"Commands.h"
+	<functional>
+	<map>
+	<iostream>
+	<string>
+
+1616572895 f:\work\march-21\polynomial\univariate.h
+	<iostream>
+	<functional>
+	"Term.h"
+
+1616139002 f:\work\march-21\polynomial\term.h
+	<iostream>
+
+1616139002 f:\work\march-21\polynomial\commands.h
+	<map>
+	<iostream>
+	<fstream>
+
+1616139002 source:f:\work\march-21\polynomial\term.cpp
+	"Term.h"
+	<iostream>
+
+1616580826 source:f:\work\march-21\polynomial\univariate.cpp
+	<iostream>
+	<functional>
+	<stdlib.h>
+	<cmath>
+	"Term.h"
+	"Univariate.h"
+
+1616139002 source:f:\work\march-21\polynomial\commands.cpp
+	"Commands.h"
+	<sstream>
+	<map>
+	<string>
+	<iostream>
+	<fstream>
+

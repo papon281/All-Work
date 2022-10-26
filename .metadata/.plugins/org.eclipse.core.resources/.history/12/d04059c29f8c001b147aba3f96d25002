@@ -1,0 +1,7 @@
+import java.util.*;
+import java.io.*;
+public class MorseCode {
+	private:
+		char c;
+		String str;
+}

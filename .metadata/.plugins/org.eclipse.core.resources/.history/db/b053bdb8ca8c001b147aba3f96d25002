@@ -1,0 +1,28 @@
+import java.util.*;
+import java.io.*;
+public class MorseCode {
+	private char ch;
+	private String str;
+	private String find = "";
+		
+	public MorseCode(char ch, String str){
+		this.ch = ch;
+		this.str = str;
+	}
+	
+	public char getCharacter() {
+		return ch;
+	}
+	
+	public void setCharacter(char c) {
+		ch =c;
+	}
+	
+	public String getEncoding() {
+		return str;
+	}
+	
+	public void setEncoding(String s) {
+		str = s;
+	}
+}
